@@ -1,10 +1,10 @@
-package com.portfolio.daianagodoy;
+package com.portfolio.daianagodoyBACK;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DaianagodoyApplicationTests {
+class DaianagodoyBackApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -9,12 +9,12 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.portfolio</groupId>
-	<artifactId>daianagodoy</artifactId>
+	<artifactId>daianagodoyBACK</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>daianagodoy</name>
+	<name>daianagodoyBACK</name>
 	<description>Portfolio de daiana godoy</description>
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>18</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
