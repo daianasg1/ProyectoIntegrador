@@ -6,12 +6,12 @@ import com.portfolio.daianagodoyBACK.Repository.IPersonaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+
 import java.util.List;
 
 @Service
 public class ImpPersonaService implements IPersonaService {
-    @Autowired
-    IPersonaRepository ipersonaRepository;
+    @Autowired IPersonaRepository ipersonaRepository;
 
     @Override
     public List<Persona> getPersona() {
