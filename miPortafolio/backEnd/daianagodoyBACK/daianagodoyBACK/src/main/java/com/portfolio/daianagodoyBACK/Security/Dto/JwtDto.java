@@ -1,8 +1,8 @@
 package com.portfolio.daianagodoyBACK.Security.Dto;
 
+import java.util.Collection;
 import org.springframework.security.core.GrantedAuthority;
 
-import java.util.Collection;
 
 public class JwtDto {
     private String token;
@@ -17,7 +17,8 @@ public class JwtDto {
         this.nombreUsuario = nombreUsuario;
         this.authorities = authorities;
     }
-    //G y S
+
+    //Getters and Setters
 
     public String getToken() {
         return token;
@@ -50,4 +51,5 @@ public class JwtDto {
     public void setAuthorities(Collection<? extends GrantedAuthority> authorities) {
         this.authorities = authorities;
     }
+
 }

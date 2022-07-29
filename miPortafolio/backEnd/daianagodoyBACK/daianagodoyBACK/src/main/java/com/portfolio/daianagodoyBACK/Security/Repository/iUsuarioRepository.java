@@ -1,13 +1,12 @@
 package com.portfolio.daianagodoyBACK.Security.Repository;
 
 import com.portfolio.daianagodoyBACK.Security.Entity.Usuario;
+import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.Optional;
-
 @Repository
-public interface iUsuarioRepository extends JpaRepository<Usuario, Integer> {
+public interface iUsuarioRepository extends JpaRepository<Usuario, Integer>{
     Optional<Usuario> findByNombreUsuario(String nombreUsuario);
 
     boolean existsByNombreUsuario(String nombreUsuario);

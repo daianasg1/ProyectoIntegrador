@@ -11,7 +11,7 @@ public class Mensaje {
     public Mensaje(String mensaje) {
         this.mensaje = mensaje;
     }
-    //G y S
+    //Getter y Setter
 
     public String getMensaje() {
         return mensaje;
@@ -20,4 +20,5 @@ public class Mensaje {
     public void setMensaje(String mensaje) {
         this.mensaje = mensaje;
     }
+
 }

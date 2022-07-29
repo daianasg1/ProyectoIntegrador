@@ -2,14 +2,14 @@ package com.portfolio.daianagodoyBACK.Security.Dto;
 
 import javax.validation.constraints.NotBlank;
 
+
 public class LoginUsuario {
     @NotBlank
     private String nombreUsuario;
     @NotBlank
     private String password;
 
-    // G y S
-
+    //Getter & Setter
 
     public String getNombreUsuario() {
         return nombreUsuario;
@@ -26,4 +26,5 @@ public class LoginUsuario {
     public void setPassword(String password) {
         this.password = password;
     }
+
 }
