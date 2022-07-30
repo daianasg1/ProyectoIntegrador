@@ -1,14 +1,31 @@
 <div class="row">
-<h1>Proyecto realizados</h1>
-<div class="contenedor">
-    <div class="col-sm-12 col-md-7 col-lg-7 parte1">
-<h1>Programa Argentina Programa </h1>
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic voluptatibus consequatur temporibus! Excepturi exercitationem sunt dolorum modi voluptate, vero eligendi nesciunt, quam impedit, repellendus totam? Ex omnis id ad mollitia.</p>
+    <h1>Proyecto</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-success" routerLink="/nuevoproyecto" *ngIf="isLogged">
+            Agregar Proyecto
+        </button>
     </div>
 
-    <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
-<img src="../../../assets/argPrograma.webp" class="img-fluid img-proyecto">
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Proyecto of proyecto">
+                    <td>
+                        <h2>{{Proyecto.nombreP}}</h2>
+                    </td>
+                    <td>{{Proyecto.descripcionP}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-info" routerLink="/editproyecto/{{Proyecto.id}}">
+                            <i class="bi bi-pencil-fill"></i>Editar Proyecto</button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Proyecto.id)">
+                            <i class="bi bi-trash-fill"></i>Borrar Proyecto</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
+</div>
 
-</div>
-</div>
