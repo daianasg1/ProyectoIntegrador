@@ -1,0 +1,42 @@
+<div class="row">
+    <h1>Acerca de mi</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-success" routerLink="/nuevoacercade" *ngIf="isLogged">
+            Agregar dato
+        </button>
+    </div>
+
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Acercade of acercade">
+                    <td>
+                        <div class="row" >
+                            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                <img src="{{persona.img}}" class="img-fluid" id="persona">
+                            </div>
+                            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                                <p id="nombre">{{persona.nombre}} {{persona.apellido}}</p>
+                                <p>Full Stack Developer Jr</p>
+                            </div>
+                        </div> 
+                    </td>
+                    <td>
+                        <h2>{{Acercade.nombreA}}</h2>
+                    </td>
+                    <td>{{Acercade.descripcionA}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-info" routerLink="/editacercade/{{Acercade.id}}">
+                            <i class="bi bi-pencil-fill"></i>Editar dato</button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Acercade.id)">
+                            <i class="bi bi-trash-fill"></i>Borrar dato</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

@@ -7,7 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { LogoAPComponent } from './components/logo-ap/logo-ap.component';
 
 import { BannerComponent } from './components/banner/banner.component';
-import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
+
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 
@@ -26,6 +26,12 @@ import { NeweducacionComponent } from './components/educacion/neweducacion.compo
 import { EditeducacionComponent } from './components/educacion/editeducacion.component';
 import { EditproyectoComponent } from './components/proyecto/editproyecto.component';
 import { NewproyectoComponent } from './components/proyecto/newproyecto.component';
+import { AcercadeComponent } from './components/acercade/acercade.component';
+import { NewacercadeComponent } from './components/acercade/newacercade.component';
+import { EditacercadeComponent } from './components/acercade/editacercade.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -34,7 +40,7 @@ import { NewproyectoComponent } from './components/proyecto/newproyecto.componen
     LogoAPComponent,
 
     BannerComponent,
-    AcercaDeComponent,
+ 
     ExperienciaComponent,
     EducacionComponent,
     HysComponent,
@@ -47,7 +53,10 @@ import { NewproyectoComponent } from './components/proyecto/newproyecto.componen
     NeweducacionComponent,
     EditeducacionComponent,
     EditproyectoComponent,
-    NewproyectoComponent
+    NewproyectoComponent,
+    AcercadeComponent,
+    NewacercadeComponent,
+    EditacercadeComponent
   
   ],
   imports: [
